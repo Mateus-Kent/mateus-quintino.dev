@@ -2,7 +2,9 @@ export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mateus-quint
 
 export const siteConfig = {
   name: "Mateus Quintino",
-  description: "Desenvolvedor fullstack pleno.",
+  role: "Desenvolvedor Fullstack",
+  description:
+    "Desenvolvedor Full Stack com experiência em React, TypeScript, Angular, .NET e GraphQL — interfaces, APIs e produtos de ponta a ponta, com foco em performance e qualidade.",
   url: siteUrl,
 }
 
