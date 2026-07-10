@@ -1,5 +1,5 @@
-import type { MetadataRoute } from "next";
-import { siteConfig } from "@/lib/site";
+import type { MetadataRoute } from "next"
+import { siteConfig } from "@/lib/site"
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
@@ -22,5 +22,5 @@ export default function manifest(): MetadataRoute.Manifest {
         type: "image/png",
       },
     ],
-  };
+  }
 }

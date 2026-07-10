@@ -1,8 +1,11 @@
-import type { Metadata } from "next";
-import { JsonLd } from "@/components/json-ld";
-import { fontBody, fontHeading, fontMono } from "@/lib/fonts";
-import { siteConfig, siteUrl } from "@/lib/site";
-import "./globals.css";
+import type { Metadata } from "next"
+import { Footer } from "@/components/footer"
+import { Header } from "@/components/header"
+import { JsonLd } from "@/components/json-ld"
+import { ThemeProvider } from "@/components/theme-provider"
+import { fontBody, fontHeading, fontMono } from "@/lib/fonts"
+import { siteConfig, siteUrl } from "@/lib/site"
+import "./globals.css"
 
 const personJsonLd = {
   "@context": "https://schema.org",
@@ -10,7 +13,7 @@ const personJsonLd = {
   name: siteConfig.name,
   url: siteUrl,
   jobTitle: "Desenvolvedor fullstack",
-};
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -62,22 +65,27 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html
       lang="pt-BR"
       className={`${fontHeading.variable} ${fontBody.variable} ${fontMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="flex min-h-full flex-col font-sans">
-        <JsonLd data={personJsonLd} />
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <JsonLd data={personJsonLd} />
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }

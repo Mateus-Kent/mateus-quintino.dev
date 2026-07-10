@@ -1,0 +1,61 @@
+{
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit",
+    "source.organizeImports": "never",
+    "source.fixAll.eslint": "never",
+    "source.fixAll.stylelint": "never",
+    "source.removeUnusedImports": "never"
+  },
+  "eslint.enable": false,
+  "json.schemaDownload.enable": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.biome": "explicit",
+      "source.organizeImports.biome": "explicit",
+      "source.organizeImports": "never",
+      "source.fixAll.eslint": "never",
+      "source.fixAll.stylelint": "never",
+      "source.removeUnusedImports": "never"
+    }
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.biome": "explicit",
+      "source.organizeImports.biome": "explicit",
+      "source.organizeImports": "never",
+      "source.fixAll.eslint": "never",
+      "source.fixAll.stylelint": "never",
+      "source.removeUnusedImports": "never"
+    }
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.biome": "explicit",
+      "source.organizeImports.biome": "explicit",
+      "source.organizeImports": "never",
+      "source.fixAll.eslint": "never",
+      "source.fixAll.stylelint": "never",
+      "source.removeUnusedImports": "never"
+    }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.biome": "explicit",
+      "source.organizeImports.biome": "explicit",
+      "source.organizeImports": "never",
+      "source.fixAll.eslint": "never",
+      "source.fixAll.stylelint": "never",
+      "source.removeUnusedImports": "never"
+    }
+  },
+  "[json]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[jsonc]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[css]": { "editor.defaultFormatter": "biomejs.biome" }
+}

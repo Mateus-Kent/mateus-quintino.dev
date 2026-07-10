@@ -1,4 +1,4 @@
-import { IBM_Plex_Mono, Inter, Sora } from "next/font/google";
+import { IBM_Plex_Mono, Inter, Sora } from "next/font/google"
 
 /**
  * Sora stands in for "Ora" (geometric display font used for headings,
@@ -11,17 +11,17 @@ export const fontHeading = Sora({
   weight: ["600", "700"],
   variable: "--font-heading",
   display: "swap",
-});
+})
 
 export const fontBody = Inter({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
-});
+})
 
 export const fontMono = IBM_Plex_Mono({
   subsets: ["latin"],
   weight: ["400", "500"],
   variable: "--font-mono",
   display: "swap",
-});
+})
