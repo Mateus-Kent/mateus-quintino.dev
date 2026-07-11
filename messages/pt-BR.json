@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "role": "Desenvolvedor Fullstack",
+    "description": "Desenvolvedor Full Stack com experiência em React, TypeScript, Angular, .NET e GraphQL — interfaces, APIs e produtos de ponta a ponta, com foco em performance e qualidade.",
+    "keywords": [
+      "Mateus Quintino",
+      "desenvolvedor fullstack",
+      "desenvolvedor react",
+      "desenvolvedor .net",
+      "engenheiro de software"
+    ]
+  },
+  "nav": {
+    "sobre": "sobre",
+    "experiencia": "experiência",
+    "educacao": "educação",
+    "contato": "contato"
+  },
+  "hero": {
+    "eyebrow": "fullstack developer",
+    "headline": "Fullstack por completo: interfaces, APIs e dados que funcionam juntos.",
+    "paragraph": "Desenvolvedor Full Stack com experiência em React, TypeScript, Angular e .NET, atuando desde startups até grandes empresas de logística — sempre com foco em soluções robustas, performáticas e de alta qualidade.",
+    "cta": "Ver Github"
+  },
+  "about": {
+    "title": "Sobre",
+    "paragraph1": "Sou desenvolvedor <highlight>Full Stack</highlight> com experiência no desenvolvimento de software para grandes empresas do setor de logística e, atualmente, atuo na <highlight>Leapfone</highlight>, startup de aluguel de smartphones, focado na construção de aplicações escaláveis.",
+    "paragraph2": "Tenho experiência no desenvolvimento de aplicações frontend e backend utilizando <highlight>React</highlight>, <highlight>TypeScript</highlight>, <highlight>Angular</highlight>, <highlight>Node.js</highlight>, <highlight>Express</highlight>, <highlight>NestJS</highlight>, <highlight>GraphQL</highlight>, <highlight>.NET</highlight> e <highlight>PostgreSQL</highlight>, além de trabalhar com bibliotecas como <highlight>MUI Joy UI</highlight> e ferramentas de monitoramento e observabilidade, como <highlight>Sentry</highlight>.",
+    "paragraph3": "Sou formado em Análise e Desenvolvimento de Sistemas e busco aplicar boas práticas de arquitetura, código limpo e desenvolvimento de software para entregar soluções robustas, eficientes e de alta qualidade."
+  },
+  "experience": {
+    "title": "Experiência",
+    "entries": {
+      "guep-frontend": {
+        "role": "Desenvolvedor Frontend Jr.",
+        "description": "Desenvolvimento de interfaces com Angular e TypeScript, com foco em componentes reutilizáveis, integração de APIs e usabilidade em sistemas de grande escala.",
+        "period": "fev 2022 – out 2023"
+      },
+      "guep-backend": {
+        "role": "Desenvolvedor Backend Jr.",
+        "description": "Desenvolvimento e manutenção de sistemas como o Score (cadastro de motoristas), Kavuka (histórico de motoristas), Backoffice e Processo Limpo, com Node, Express, Sequelize e Redis.",
+        "period": "out 2023 – out 2024"
+      },
+      "leapfone": {
+        "role": "Desenvolvedor Fullstack Pleno",
+        "description": "Front-end com React, TypeScript e MUI Joy UI integrado via GraphQL, back-end em .NET e PostgreSQL com APIs REST e gRPC, aplicando DDD e Clean Code. Containerização com Docker e observabilidade com Sentry.",
+        "period": "abr 2025 – presente"
+      }
+    }
+  },
+  "education": {
+    "title": "Educação",
+    "entries": {
+      "pos-tech": {
+        "title": "Pós Tech – AI Scientist",
+        "org": "FIAP + Alura",
+        "description": "Programa intensivo de ciência de dados e IA, com machine learning, deep learning, IA generativa, NLP, MLOps e práticas de deploy e monitoramento de modelos.",
+        "period": "mar 2026 – dez 2026"
+      },
+      "ih-dublin": {
+        "title": "International House Dublin",
+        "org": "Intercâmbio",
+        "description": "Estudo de inglês, módulo B2.2, em Dublin.",
+        "period": "set 2025 – out 2025"
+      },
+      "fecap": {
+        "title": "Fecap – Análise e Desenvolvimento de Sistemas",
+        "org": "Fecap",
+        "description": "Desenvolvimento de aplicações back-end, web e mobile com C#, JavaScript e Python, além de fundamentos de IoT, análise de dados e machine learning.",
+        "period": "jan 2022 – dez 2023"
+      },
+      "itb": {
+        "title": "ITB – Técnico em Tecnologia da Informação",
+        "org": "ITB",
+        "description": "Lógica de programação, linguagens de programação, sistemas operacionais e banco de dados.",
+        "period": "jan 2019 – dez 2021"
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "groupLabels": {
+      "layout": "Frontend",
+      "database": "Backend & infra",
+      "globe": "Idiomas"
+    },
+    "languages": {
+      "pt": "Português – nativo",
+      "en": "Inglês – avançado B2.2"
+    }
+  },
+  "contact": {
+    "title": "Contato",
+    "tagline": "Aberto a novas oportunidades e conversas.",
+    "cards": {
+      "email": "E-mail",
+      "linkedin": "LinkedIn",
+      "github": "Github",
+      "resume": "Currículo"
+    }
+  },
+  "footer": {
+    "role": "fullstack developer"
+  },
+  "themeToggle": {
+    "toLight": "Alternar para tema claro",
+    "toDark": "Alternar para tema escuro"
+  }
+}

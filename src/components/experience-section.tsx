@@ -3,6 +3,7 @@
 import { StackIcon } from "@phosphor-icons/react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import Image from "next/image"
+import { useTranslations } from "next-intl"
 import { useRef } from "react"
 import { Reveal } from "@/components/reveal"
 import { Section } from "@/components/section"
@@ -20,7 +21,16 @@ const contentVariants = {
   visible: { opacity: 1, y: 0 },
 }
 
-function TimelineItem({ tag, company, role, period, logo, logoAlt, description, tags }: ExperienceEntry) {
+function TimelineItem({
+  tag,
+  company,
+  role,
+  period,
+  logo,
+  logoAlt,
+  description,
+  tags,
+}: Omit<ExperienceEntry, "id"> & { role: string; period: string; description: string }) {
   return (
     <motion.div
       initial="hidden"
@@ -75,6 +85,7 @@ function TimelineItem({ tag, company, role, period, logo, logoAlt, description, 
 }
 
 export function ExperienceSection() {
+  const t = useTranslations("experience")
   const trackRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: trackRef,
@@ -85,7 +96,7 @@ export function ExperienceSection() {
   return (
     <Section id="experiencia">
       <Reveal>
-        <SectionHeading icon={<StackIcon size={19} />} title="Experiência" />
+        <SectionHeading icon={<StackIcon size={19} />} title={t("title")} />
       </Reveal>
 
       <div ref={trackRef} className="relative">
@@ -94,7 +105,13 @@ export function ExperienceSection() {
 
         <div className="flex flex-col-reverse">
           {experience.map((entry) => (
-            <TimelineItem key={`${entry.company}-${entry.tag}`} {...entry} />
+            <TimelineItem
+              key={entry.id}
+              {...entry}
+              role={t(`entries.${entry.id}.role`)}
+              period={t(`entries.${entry.id}.period`)}
+              description={t(`entries.${entry.id}.description`)}
+            />
           ))}
         </div>
       </div>
