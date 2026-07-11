@@ -20,12 +20,7 @@
       {
         "id": "portfolio_frontend_stack",
         "label": "Portfolio Frontend Stack",
-        "nodes": [
-          "readme_nextjs",
-          "readme_react",
-          "readme_typescript",
-          "readme_tailwindcss"
-        ],
+        "nodes": ["readme_nextjs", "readme_react", "readme_typescript", "readme_tailwindcss"],
         "relation": "participate_in",
         "confidence": "EXTRACTED",
         "confidence_score": 0.9,
@@ -5773,12 +5768,7 @@
     {
       "id": "portfolio_frontend_stack",
       "label": "Portfolio Frontend Stack",
-      "nodes": [
-        "readme_nextjs",
-        "readme_react",
-        "readme_typescript",
-        "readme_tailwindcss"
-      ],
+      "nodes": ["readme_nextjs", "readme_react", "readme_typescript", "readme_tailwindcss"],
       "relation": "participate_in",
       "confidence": "EXTRACTED",
       "confidence_score": 0.9,

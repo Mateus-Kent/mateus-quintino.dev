@@ -1,4 +1,5 @@
 import { UserIcon } from "@phosphor-icons/react/ssr"
+import { getTranslations } from "next-intl/server"
 import type { ReactNode } from "react"
 import { Reveal } from "@/components/reveal"
 import { Section } from "@/components/section"
@@ -8,31 +9,20 @@ function Highlight({ children }: { children: ReactNode }) {
   return <strong className="font-medium text-foreground">{children}</strong>
 }
 
-export function AboutSection() {
+export async function AboutSection() {
+  const t = await getTranslations("about")
+  const highlight = (chunks: ReactNode) => <Highlight>{chunks}</Highlight>
+
   return (
     <Section id="sobre">
       <Reveal>
-        <SectionHeading icon={<UserIcon size={19} />} title="Sobre" />
+        <SectionHeading icon={<UserIcon size={19} />} title={t("title")} />
       </Reveal>
 
       <Reveal delay={0.05} className="flex flex-col gap-3.5 text-base text-foreground-muted">
-        <p>
-          Sou desenvolvedor <Highlight>Full Stack</Highlight> com experiência no desenvolvimento de software para
-          grandes empresas do setor de logística e, atualmente, atuo na <Highlight>Leapfone</Highlight>, startup de
-          aluguel de smartphones, focado na construção de aplicações escaláveis.
-        </p>
-        <p>
-          Tenho experiência no desenvolvimento de aplicações frontend e backend utilizando <Highlight>React</Highlight>,{" "}
-          <Highlight>TypeScript</Highlight>, <Highlight>Angular</Highlight>, <Highlight>Node.js</Highlight>,{" "}
-          <Highlight>Express</Highlight>, <Highlight>NestJS</Highlight>, <Highlight>GraphQL</Highlight>,{" "}
-          <Highlight>.NET</Highlight> e <Highlight>PostgreSQL</Highlight>, além de trabalhar com bibliotecas como{" "}
-          <Highlight>MUI Joy UI</Highlight> e ferramentas de monitoramento e observabilidade, como{" "}
-          <Highlight>Sentry</Highlight>.
-        </p>
-        <p>
-          Sou formado em Análise e Desenvolvimento de Sistemas e busco aplicar boas práticas de arquitetura, código
-          limpo e desenvolvimento de software para entregar soluções robustas, eficientes e de alta qualidade.
-        </p>
+        <p>{t.rich("paragraph1", { highlight })}</p>
+        <p>{t.rich("paragraph2", { highlight })}</p>
+        <p>{t("paragraph3")}</p>
       </Reveal>
     </Section>
   )

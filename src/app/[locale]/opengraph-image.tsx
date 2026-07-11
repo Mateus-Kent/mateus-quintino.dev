@@ -1,4 +1,7 @@
 import { ImageResponse } from "next/og"
+import { hasLocale } from "next-intl"
+import { getTranslations } from "next-intl/server"
+import { routing } from "@/i18n/routing"
 import { siteConfig } from "@/lib/site"
 
 export const runtime = "edge"
@@ -6,7 +9,11 @@ export const alt = siteConfig.name
 export const size = { width: 1200, height: 630 }
 export const contentType = "image/png"
 
-export default function OpengraphImage() {
+export default async function OpengraphImage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale: requested } = await params
+  const locale = hasLocale(routing.locales, requested) ? requested : routing.defaultLocale
+  const t = await getTranslations({ locale, namespace: "hero" })
+
   return new ImageResponse(
     <div
       style={{
@@ -45,7 +52,7 @@ export default function OpengraphImage() {
           letterSpacing: "-0.02em",
         }}
       >
-        Fullstack por completo: interfaces, APIs e dados que funcionam juntos.
+        {t("headline")}
       </div>
 
       <div
