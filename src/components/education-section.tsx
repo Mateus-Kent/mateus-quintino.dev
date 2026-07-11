@@ -1,5 +1,6 @@
 import { GraduationCapIcon } from "@phosphor-icons/react/ssr"
 import Image from "next/image"
+import { getTranslations } from "next-intl/server"
 import { Reveal } from "@/components/reveal"
 import { Section } from "@/components/section"
 import { SectionHeading } from "@/components/section-heading"
@@ -14,7 +15,15 @@ function EducationItem({
   logo,
   logoAlt,
   isFirst,
-}: EducationEntry & { isFirst: boolean }) {
+}: {
+  title: string
+  org: string
+  period: string
+  description: string
+  logo?: string
+  logoAlt?: string
+  isFirst: boolean
+}) {
   return (
     <div className={`flex gap-4.5 py-5 ${isFirst ? "" : "border-t border-border"}`}>
       <div className="flex h-9.5 w-9.5 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-background-alt">
@@ -35,17 +44,27 @@ function EducationItem({
   )
 }
 
-export function EducationSection() {
+export async function EducationSection() {
+  const t = await getTranslations("education")
+
   return (
     <Section id="educacao">
       <Reveal>
-        <SectionHeading icon={<GraduationCapIcon size={19} />} title="Educação" />
+        <SectionHeading icon={<GraduationCapIcon size={19} />} title={t("title")} />
       </Reveal>
 
       <div>
-        {education.map((entry, index) => (
-          <Reveal key={entry.title} delay={index * 0.05}>
-            <EducationItem {...entry} isFirst={index === 0} />
+        {education.map((entry: EducationEntry, index) => (
+          <Reveal key={entry.id} delay={index * 0.05}>
+            <EducationItem
+              title={t(`entries.${entry.id}.title`)}
+              org={t(`entries.${entry.id}.org`)}
+              period={t(`entries.${entry.id}.period`)}
+              description={t(`entries.${entry.id}.description`)}
+              logo={entry.logo}
+              logoAlt={entry.logoAlt}
+              isFirst={index === 0}
+            />
           </Reveal>
         ))}
       </div>

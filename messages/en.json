@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "role": "Fullstack Developer",
+    "description": "Full Stack Developer with experience in React, TypeScript, Angular, .NET, and GraphQL — end-to-end interfaces, APIs, and products, focused on performance and quality.",
+    "keywords": ["Mateus Quintino", "fullstack developer", "react developer", ".net developer", "software engineer"]
+  },
+  "nav": {
+    "sobre": "about",
+    "experiencia": "experience",
+    "educacao": "education",
+    "contato": "contact"
+  },
+  "hero": {
+    "eyebrow": "fullstack developer",
+    "headline": "Full stack, fully connected: interfaces, APIs, and data working together.",
+    "paragraph": "Full Stack Developer with experience in React, TypeScript, Angular, and .NET, working across startups and large logistics companies — always focused on robust, high-performance, high-quality solutions.",
+    "cta": "View Github"
+  },
+  "about": {
+    "title": "About",
+    "paragraph1": "I'm a <highlight>Full Stack</highlight> developer with experience building software for large logistics companies, and I currently work at <highlight>Leapfone</highlight>, a smartphone rental startup, focused on building scalable applications.",
+    "paragraph2": "I have experience developing frontend and backend applications using <highlight>React</highlight>, <highlight>TypeScript</highlight>, <highlight>Angular</highlight>, <highlight>Node.js</highlight>, <highlight>Express</highlight>, <highlight>NestJS</highlight>, <highlight>GraphQL</highlight>, <highlight>.NET</highlight>, and <highlight>PostgreSQL</highlight>, as well as libraries like <highlight>MUI Joy UI</highlight> and monitoring/observability tools like <highlight>Sentry</highlight>.",
+    "paragraph3": "I hold a degree in Systems Analysis and Development, and I aim to apply solid architecture practices, clean code, and software engineering fundamentals to deliver robust, efficient, high-quality solutions."
+  },
+  "experience": {
+    "title": "Experience",
+    "entries": {
+      "guep-frontend": {
+        "role": "Frontend Developer Jr.",
+        "description": "Built interfaces with Angular and TypeScript, focused on reusable components, API integration, and usability for large-scale systems.",
+        "period": "Feb 2022 – Oct 2023"
+      },
+      "guep-backend": {
+        "role": "Backend Developer Jr.",
+        "description": "Developed and maintained systems such as Score (driver registration), Kavuka (driver history), Backoffice, and Processo Limpo, using Node, Express, Sequelize, and Redis.",
+        "period": "Oct 2023 – Oct 2024"
+      },
+      "leapfone": {
+        "role": "Fullstack Developer Mid-Level",
+        "description": "Frontend with React, TypeScript, and MUI Joy UI integrated via GraphQL; backend in .NET and PostgreSQL with REST and gRPC APIs, applying DDD and Clean Code. Containerization with Docker and observability with Sentry.",
+        "period": "Apr 2025 – Present"
+      }
+    }
+  },
+  "education": {
+    "title": "Education",
+    "entries": {
+      "pos-tech": {
+        "title": "Pós Tech – AI Scientist",
+        "org": "FIAP + Alura",
+        "description": "Intensive data science and AI program covering machine learning, deep learning, generative AI, NLP, MLOps, and model deployment/monitoring practices.",
+        "period": "Mar 2026 – Dec 2026"
+      },
+      "ih-dublin": {
+        "title": "International House Dublin",
+        "org": "Exchange program",
+        "description": "English studies, B2.2 module, in Dublin.",
+        "period": "Sep 2025 – Oct 2025"
+      },
+      "fecap": {
+        "title": "Fecap – Systems Analysis and Development",
+        "org": "Fecap",
+        "description": "Developed back-end, web, and mobile applications with C#, JavaScript, and Python, plus IoT, data analysis, and machine learning fundamentals.",
+        "period": "Jan 2022 – Dec 2023"
+      },
+      "itb": {
+        "title": "ITB – IT Technician",
+        "org": "ITB",
+        "description": "Programming logic, programming languages, operating systems, and databases.",
+        "period": "Jan 2019 – Dec 2021"
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "groupLabels": {
+      "layout": "Frontend",
+      "database": "Backend & infra",
+      "globe": "Languages"
+    },
+    "languages": {
+      "pt": "Portuguese – native",
+      "en": "English – advanced B2.2"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "tagline": "Open to new opportunities and conversations.",
+    "cards": {
+      "email": "Email",
+      "linkedin": "LinkedIn",
+      "github": "Github",
+      "resume": "Resume"
+    }
+  },
+  "footer": {
+    "role": "fullstack developer"
+  },
+  "themeToggle": {
+    "toLight": "Switch to light theme",
+    "toDark": "Switch to dark theme"
+  }
+}
