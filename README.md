@@ -1,85 +1,85 @@
-# Mateus Quintino — Portfólio
+# Mateus Quintino — Portfolio
 
 ![Mateus Quintino](./.github/imgs/readme-header.png)
 
-## Portfólio pessoal, apresentando minha trajetória e experiência como desenvolvedor Full Stack
+## Personal portfolio, showcasing my journey and experience as a Full Stack developer
 
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fmateus-quintino.dev&up_message=no%20ar&down_message=fora%20do%20ar&label=mateus-quintino.dev)](https://mateus-quintino.dev)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fmateus-quintino.dev&up_message=online&down_message=offline&label=mateus-quintino.dev)](https://mateus-quintino.dev)
 
-🔗 Acesse: **[mateus-quintino.dev](https://mateus-quintino.dev)**
+🔗 Visit: **[mateus-quintino.dev](https://mateus-quintino.dev)**
 
 ## 💻 Preview
 
-![Preview do site](./.github/imgs/site_preview.png)
+![Site preview](./.github/imgs/site_preview.png)
 
-## 👨‍💻 Este projeto foi desenvolvido com as seguintes tecnologias
+## 👨‍💻 This project was built with the following technologies
 
 ### Next.js
 
-Framework React para produção, com App Router, renderização híbrida (estática/servidor) e geração de metadados (SEO, Open Graph) nativa.
+React framework for production, with App Router, hybrid rendering (static/server), and native metadata generation (SEO, Open Graph).
 
-Site: <https://nextjs.org>
+Website: <https://nextjs.org>
 
 ### React
 
-Biblioteca para construção de interfaces baseadas em componentes.
+Library for building component-based interfaces.
 
-Site: <https://react.dev>
+Website: <https://react.dev>
 
 ### TypeScript
 
-Superset de JavaScript com tipagem estática, usado em todo o projeto para segurança de tipos e melhor DX.
+Statically typed superset of JavaScript, used throughout the project for type safety and a better DX.
 
-Site: <https://www.typescriptlang.org>
+Website: <https://www.typescriptlang.org>
 
 ### Tailwind CSS
 
-Framework CSS utility-first, usado para estilização com um design system consistente (cores, espaçamento e tipografia centralizados via tokens).
+Utility-first CSS framework, used for styling with a consistent design system (colors, spacing, and typography centralized via tokens).
 
-Site: <https://tailwindcss.com>
+Website: <https://tailwindcss.com>
 
 ### Framer Motion
 
-Biblioteca de animações para React, usada nas transições de entrada e nos efeitos de *reveal* ao rolar a página.
+Animation library for React, used in the entry transitions and *reveal* effects while scrolling the page.
 
-Site: <https://motion.dev>
+Website: <https://motion.dev>
 
 ### Phosphor Icons
 
-Biblioteca de ícones flexível para interfaces.
+Flexible icon library for interfaces.
 
-Site: <https://phosphoricons.com>
+Website: <https://phosphoricons.com>
 
 ### next-themes
 
-Gerenciamento de tema claro/escuro sem *flash* de conteúdo, com persistência e detecção da preferência do sistema.
+Light/dark theme management with no content *flash*, with persistence and system preference detection.
 
-Site: <https://github.com/pacocoursey/next-themes>
+Website: <https://github.com/pacocoursey/next-themes>
 
 ### Biome
 
-Formatter e linter usado no lugar de ESLint + Prettier, garantindo um padrão de código único e rápido em todo o projeto.
+Formatter and linter used in place of ESLint + Prettier, ensuring a single, fast code standard across the whole project.
 
-Site: <https://biomejs.dev>
+Website: <https://biomejs.dev>
 
-## 🔖 Estrutura do site
+## 🔖 Site structure
 
-- **Header** — navegação fixa e alternância de tema
-- **Hero** — apresentação inicial
-- **Sobre** — resumo da minha experiência
-- **Experiência** — linha do tempo profissional
-- **Educação** — formação acadêmica e cursos
-- **Skills** — stack técnica e idiomas
-- **Contato** — e-mail, redes sociais e currículo para download
+- **Header** — sticky navigation and theme toggle
+- **Hero** — initial introduction
+- **About** — summary of my experience
+- **Experience** — professional timeline
+- **Education** — academic background and courses
+- **Skills** — tech stack and languages
+- **Contact** — email, social links, and downloadable resume
 
-## 🚀 Rodando localmente
+## 🚀 Running locally
 
-### Pré-requisitos
+### Prerequisites
 
 - [Node.js](https://nodejs.org) 20+
 - [pnpm](https://pnpm.io)
 
-### Instalação
+### Installation
 
 ```bash
 git clone https://github.com/Mateus-Kent/mateus-quintino.dev.git
@@ -87,15 +87,15 @@ cd mateus-quintino.dev
 pnpm install
 ```
 
-### Scripts disponíveis
+### Available scripts
 
-| Comando | Descrição |
+| Command | Description |
 | --- | --- |
-| `pnpm dev` | Inicia o servidor de desenvolvimento |
-| `pnpm build` | Gera o build de produção |
-| `pnpm start` | Sobe o build de produção localmente |
-| `pnpm lint` | Verifica o código com o Biome |
-| `pnpm lint:fix` | Corrige automaticamente o que o Biome permitir |
-| `pnpm typecheck` | Verifica os tipos com o TypeScript |
+| `pnpm dev` | Starts the development server |
+| `pnpm build` | Generates the production build |
+| `pnpm start` | Serves the production build locally |
+| `pnpm lint` | Checks the code with Biome |
+| `pnpm lint:fix` | Automatically fixes what Biome allows |
+| `pnpm typecheck` | Checks types with TypeScript |
 
-Com o servidor rodando, acesse [http://localhost:3000](http://localhost:3000).
+With the server running, visit [http://localhost:3000](http://localhost:3000).
